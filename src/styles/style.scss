@@ -1,0 +1,46 @@
+$body-margin: 8px;
+$default-margin: 10px;
+
+@media screen {
+  body {
+    margin: $body-margin;
+  }
+
+  .description {
+    font-size: larger;
+    background-color: burlywood;
+    width: auto;
+    border-radius: 6px;
+    padding: 5px;
+    margin-bottom: $default-margin;
+  }
+
+  #language {
+    margin-right: $default-margin;
+  }
+
+  #editor {
+    position: relative;
+    width: auto;
+    height: 500px;
+    margin-top: $default-margin;
+  }
+
+  .result-label {
+    display: block;
+    margin-top: $default-margin;
+    margin-bottom: 5px;
+    margin-left: $default-margin;
+  }
+
+  #result {
+    resize: none;
+    width: calc(100% - $body-margin);
+    height: 200px;
+    background-color: gainsboro;
+  }
+
+  #result:focus {
+    outline: none;
+  }
+}
